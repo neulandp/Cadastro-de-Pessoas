@@ -1,0 +1,87 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card shadow-lg">
+        <div class="card-body">
+          <h3 class="mb-4 text-center">
+            {{ editando ? 'Editar Pessoa' : 'Cadastrar Nova Pessoa' }}
+          </h3>
+
+          <form [formGroup]="form" (ngSubmit)="salvar()">
+            <!--Nome-->
+            <h6>Nome</h6>
+            <mdb-form-control class="mb-4">
+              <input
+                mdbInput
+                formControlName="nome"
+                id="nome"
+                type="text"
+                class="form-control"
+              />
+              <label mdbLabel for="nome" class="form-label">Nome</label>
+            </mdb-form-control>
+
+            <!--CPF-->
+            <h6>CPF</h6>
+            <mdb-form-control class="mb-4">
+              <input
+                mdbInput
+                formControlName="cpf"
+                id="cpf"
+                type="text"
+                class="form-control"
+              />
+              <label mdbLabel for="cpf" class="form-label">CPF</label>
+            </mdb-form-control>
+
+            <!--Data de nascimento-->
+            <h6>Data de Nascimento</h6>
+            <mdb-form-control class="mb-4">
+              <input
+                mdbInput
+                formControlName="dataNascimento"
+                id="dataNascimento"
+                type="date"
+                class="form-control"
+              />
+              <label mdbLabel for="dataNascimento" class="form-label"
+                >Data de Nascimento</label
+              >
+            </mdb-form-control>
+
+            <!--Email-->
+            <h6>Email</h6>
+            <mdb-form-control class="mb-4">
+              <input
+                mdbInput
+                formControlName="email"
+                id="email"
+                type="email"
+                class="form-control"
+              />
+              <label mdbLabel for="email" class="form-label">Email</label>
+            </mdb-form-control>
+
+            <!--Botões-->
+            <div class="d-flex justify-content-between">
+              <button
+                mdbRipple
+                type="submit"
+                class="btn btn-primary w-50 me-2"
+                [disabled]="form.invalid"
+              >
+                Salvar
+              </button>
+              <a
+                class="btn btn-secondary w-50 ms-2"
+                [routerLink]="['/admin/pessoas']"
+              >
+                Cancelar
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

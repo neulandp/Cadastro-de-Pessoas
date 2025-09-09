@@ -1,0 +1,23 @@
+.login-container {
+  background: linear-gradient(135deg, #6a11cb 0%, #bc0290 100%);
+}
+
+.card {
+  background: #ffffff;
+  border: none;
+}
+
+h3 {
+  font-weight: bold;
+  color: #333;
+}
+
+.btn-primary {
+  background: #bf25fc;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #7b119b;
+}

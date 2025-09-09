@@ -1,0 +1,99 @@
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+h3 {
+  font-weight: 700;
+  color: #7b119b;
+  margin-bottom: 1.5rem;
+}
+
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.table thead {
+  background: linear-gradient(135deg, #6a11cb, #3a076f);
+  color: #fff;
+  font-weight: 600;
+}
+
+.table thead th {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table tbody tr {
+  transition: all 0.2s ease-in-out;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f5ff;
+  transform: scale(1.01);
+}
+
+.table tbody td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.btn-floating {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.btn-floating:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  margin: 0 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.2s ease;
+  color: #fff;
+}
+
+.action-btn i {
+  font-size: 16px; 
+  pointer-events: none; 
+}
+
+.action-btn.edit {
+  background-color: #6a11cb; 
+}
+
+.action-btn.edit:hover {
+  background-color: #3c0972;
+  transform: scale(1.1);
+}
+
+.action-btn.delete {
+  background-color: #dc3545; 
+}
+
+.action-btn.delete:hover {
+  background-color: #b02a37;
+  transform: scale(1.1);
+}

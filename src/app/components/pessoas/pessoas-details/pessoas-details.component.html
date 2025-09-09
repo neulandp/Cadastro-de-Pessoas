@@ -1,0 +1,54 @@
+<div
+  class="modal fade"
+  id="pessoaModal"
+  tabindex="-1"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      
+      <!-- Cabeçalho -->
+      <div class="modal-header">
+        <h5 class="modal-title">Cadastro de Pessoas</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-mdb-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Corpo do modal -->
+      <div class="modal-body">
+        <div class="form-outline mb-4" data-mdb-input-init>
+          <input
+            [(ngModel)]="pessoa.nome"
+            type="text"
+            id="nome"
+            class="form-control"
+          />
+          <label class="form-label" for="nome">Nome</label>
+        </div>
+      </div>
+
+      <!-- Rodapé -->
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-mdb-dismiss="modal"
+        >
+          Cancelar
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          (click)="save()"
+        >
+          Salvar
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
